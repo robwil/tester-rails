@@ -7,6 +7,10 @@ group :heroku do
 	gem 'rails_12factor'
 end
 
+# app server
+gem 'foreman'
+gem 'unicorn'
+
 # Database
 gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
 gem 'bson_ext'

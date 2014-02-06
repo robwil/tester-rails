@@ -1,4 +1,4 @@
-development:
+development: &defaults
   # Configure available database sessions. (required)
   sessions:
     # Defines the default session. (required)
@@ -72,3 +72,6 @@ heroku:
   sessions:
     default:
       uri: <%= ENV['MONGOHQ_URL'] %>
+
+production:
+  <<: *defaults
