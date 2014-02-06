@@ -9,7 +9,7 @@ end
 
 # app server
 gem 'foreman'
-gem 'unicorn'
+gem 'puma'
 
 # Database
 gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
